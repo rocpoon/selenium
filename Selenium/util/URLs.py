@@ -5,4 +5,6 @@ PAGE_WITH_FRAMES = "https://docs.oracle.com/javase/8/docs/api/"
 ORANGE_HRM = "https://opensource-demo.orangehrmlive.com/"
 ORANGE_HRM_LOGIN = "https://opensource-demo.orangehrmlive.com/web/index.php/auth/login"
 
+JQUERYUI_DATEPICKER = "https://jqueryui.com/datepicker/"
+
 
