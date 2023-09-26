@@ -1,31 +1,22 @@
-import time
-from datetime import datetime
-
 ## Basic webdriver components (selector and key)
 from selenium import webdriver
 from selenium.webdriver.common.by import By
-from selenium.webdriver.common.keys import Keys
 
 ## Wait support for explicit wait
 from selenium.webdriver.support.ui import WebDriverWait
 from selenium.webdriver.support import expected_conditions as EC
 
-## Unique webElement
-from selenium.webdriver.support.select import Select
-
-
-TEST_AUTOMATION_URL = "https://testautomationpractice.blogspot.com/"
+from util import URLs
 
 # Chrome specific options
 options = webdriver.ChromeOptions()
 options.add_experimental_option("detach", True)
 
 
-
 if __name__ == "__main__":
     driver = webdriver.Chrome(options=options)
     wait = WebDriverWait(driver, 3)
-    driver.get(TEST_AUTOMATION_URL)
+    driver.get(URLs.TEST_AUTOMATION_URL)
 
     alert_list = ["Alert", "Confirm Box", "Prompt"]
     alert_button = driver.find_element(By.XPATH, f"//button[text()='{alert_list[2]}']")
