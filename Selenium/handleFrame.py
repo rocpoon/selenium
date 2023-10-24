@@ -19,6 +19,7 @@ def switch_frame_test():
     driver.get(URL_WITH_FRAME)
     PACKAGE_NAME = "java.applet"
 
+    # You can switch to frame by frame's index, name, or webelement
     # classFrame = driver.find_element(By.XPATH, "//*[@name='classFrame']")
     driver.switch_to.frame('classFrame')
     wait.until(EC.frame_to_be_available_and_switch_to_it((By.XPATH, "//iframe[@name='trustarc_cm']")))
