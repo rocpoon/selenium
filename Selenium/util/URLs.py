@@ -7,4 +7,3 @@ ORANGE_HRM_LOGIN = "https://opensource-demo.orangehrmlive.com/web/index.php/auth
 
 JQUERYUI_DATEPICKER = "https://jqueryui.com/datepicker/"
 JQUERYSCRIPT_SLIDER = "https://www.jqueryscript.net/demo/Price-Range-Slider-jQuery-UI/"
-
